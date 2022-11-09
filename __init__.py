@@ -11,6 +11,7 @@ class CarbonIntensityUk(MycroftSkill):
     def handle_uk_intensity_carbon(self, message):
         intensity = ''
         intensity = requests.get(BASE_URL).json()['data'][0]
+        return intensity["intensity"]["actual"]
 
         self.speak_dialog('uk.intensity.carbon', data={
             'intensity': intensity
