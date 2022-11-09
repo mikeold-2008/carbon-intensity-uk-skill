@@ -5,12 +5,9 @@ Gets uk carbon intensity data for the current half hour
 Uses the national grid carbon intensity api to fetch and return the latest half hourly intensity value - low, mediun or high
 
 ## Examples
-* "Carbon intensity"
-* "What's the carbon intensity"
-* "What's the carbon intensity of the grid"
-* "What's the carbon intensity of the grid right now"
-* "What's the carbon level of the grid"
-* "What's the carbon level of the grid right now"
+* carbon intensity
+* what's the carbon intensity
+* what's the carbon intensity on the grid right now
 
 ## Credits
 mikeold-2008
