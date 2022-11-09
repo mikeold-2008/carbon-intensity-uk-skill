@@ -1,3 +1,4 @@
+from datetime import date
 import requests 
 BASE_URL = "https://api.carbonintensity.org.uk/intensity"
 from mycroft import MycroftSkill, intent_file_handler
@@ -20,6 +21,10 @@ class CarbonIntensityUk(MycroftSkill):
             'intensity': intensity
         })
 
+        
+        def stop(self):
+        pass
+        
 
 def create_skill():
     return CarbonIntensityUk()
