@@ -1,5 +1,6 @@
-from datetime import date
+
 from mycroft import MycroftSkill, intent_file_handler
+from datetime import date
 import requests 
 
 
@@ -15,9 +16,7 @@ class CarbonIntensityUk(MycroftSkill):
             'intensity': intensity
         })
 
-        
-        def stop(self):
-        pass
+
         
 
 def create_skill():
