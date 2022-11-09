@@ -1,7 +1,6 @@
 from datetime import date
-import requests 
-BASE_URL = "https://api.carbonintensity.org.uk/intensity"
 from mycroft import MycroftSkill, intent_file_handler
+import requests 
 
 
 class CarbonIntensityUk(MycroftSkill):
@@ -9,6 +8,7 @@ class CarbonIntensityUk(MycroftSkill):
         MycroftSkill.__init__(self)
         
     def fetch_last_half_hour()-> str:
+        BASE_URL = "https://api.carbonintensity.org.uk/intensity"
         intensity = requests.get(BASE_URL).json()['data'][0]
         return intensity["intensity"]["index"]
 
