@@ -11,8 +11,8 @@ class CarbonIntensityUk(MycroftSkill):
     @intent_file_handler('uk.intensity.carbon.intent')
     def handle_uk_intensity_carbon(self, message):
         thing = requests.get("https://api.carbonintensity.org.uk/intensity").json()['data'][0]
-        intensity = "house tall"
-        
+        #intensity = "house tall"
+        intensity = json.dumps(thing)
         self.speak_dialog('uk.intensity.carbon', data={
             'intensity': intensity
         })
