@@ -6,8 +6,10 @@ Uses the national grid carbon intensity API to fetch and return the latest half 
 
 ## Examples
 * carbon intensity
-* what's the carbon intensity
-* what's the carbon intensity on the grid right now
+* what's the carbon intensity right now
+* what's the carbon level right now
+* what's the carbon level
+* what's the carbon level on the grid
 
 ## Credits
 mikeold-2008
