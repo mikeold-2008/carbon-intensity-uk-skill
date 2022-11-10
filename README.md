@@ -2,7 +2,7 @@
 Gets uk carbon intensity data for the current half hour
 
 ## About
-Uses the national grid carbon intensity api to fetch and return the latest half hourly intensity value - low, mediun or high
+Uses the national grid carbon intensity API to fetch and return the latest half hourly intensity value - low, medium or high
 
 ## Examples
 * carbon intensity
